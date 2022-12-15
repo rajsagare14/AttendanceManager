@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Magic 75</string>
+    <string name="lecturesAttended">Lectures Attended</string>
+    <string name="lecturesTotal">Total Lectures</string>
+    <string name="Calculate">Calculate</string>
+    <string name="CalculateAttendance">Calculate Attendance</string>
+</resources>
