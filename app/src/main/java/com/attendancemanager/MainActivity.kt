@@ -32,10 +32,15 @@ class MainActivity : AppCompatActivity() {
 //                calculatedResult.text = t.toString()
 //                calculatedResult.text = res.toString()
                 if(res == 75.00){
-                    resStr = "Attendance Exactly 75%!\nDont Miss Lectures"
+                    resStr = "Attendance Exactly $res%!\nDont Miss Lectures"
                 }
                 else if (res > 75){
-                    resStr = resStr.plus(" Congratulations!!!\nAttendance above 75%\nYou can afford to Bunk")
+                    if(res>100){
+                        resStr = "Incorrect Data Entered!!"
+                        return@setOnClickListener
+                    }
+                    resStr =
+                        "$resStr Congratulations!!!\nAttendance is $res%\nYou can afford to Bunk"
                     val ot = t
                     while (res > 75){
                         t = t + 1
@@ -47,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                     resStr = resStr + " " + a + " Lectures"
                 }
                 else{
-                    resStr = resStr.plus(" Alert!!!\nAttendance below 75%\nYou cant afford to Bunk any Lectures\nYou must attend the next")
+                    resStr = resStr.plus(" Alert!!!\nAttendance below 75%\n Attendance is $res%\nYou cant afford to Bunk any Lectures\nYou must attend the next")
                     val op = p
                     while(res<=75){
                         p = p+1

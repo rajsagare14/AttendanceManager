@@ -18,7 +18,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/lecturesAttended" />
+            android:text="@string/lecturesAttended"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/lecturesAttended"
@@ -40,7 +42,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/lecturesTotal" />
+            android:text="@string/lecturesTotal"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/lecturesTotal"
@@ -56,11 +60,15 @@
         android:id="@+id/calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Calculate" />
+        android:text="@string/Calculate"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/CalculateAttendance" />
+        android:hint="@string/CalculateAttendance"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 </LinearLayout>
